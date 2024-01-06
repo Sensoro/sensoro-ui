@@ -2,9 +2,25 @@
   "name": "@sensoro/taiwind-plugin",
   "version": "1.0.0",
   "description": "SENSORO design language taiwind plugin",
-  "main": "index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./*": "./*"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "*.css",
+    "dist"
+  ],
+  "sideEffects": false,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "unbuild",
+    "stub": "unbuild --stub"
   },
   "keywords": [],
   "author": "",

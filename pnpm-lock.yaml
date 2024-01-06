@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@types/culori':
+        specifier: ^2.0.4
+        version: 2.0.4
       prettier:
         specifier: ^3.1.1
         version: 3.1.1
@@ -57,6 +60,9 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
     devDependencies:
+      '@sensoro/taiwind-plugin':
+        specifier: workspace
+        version: link:../../packages/taiwind-plugin-sensoro
       '@types/react':
         specifier: ^18.2.43
         version: 18.2.43
@@ -66,6 +72,15 @@ importers:
       '@vitejs/plugin-react':
         specifier: ^4.2.1
         version: 4.2.1(vite@5.0.8)
+      autoprefixer:
+        specifier: ^10.4.16
+        version: 10.4.16(postcss@8.4.33)
+      postcss:
+        specifier: ^8.4.33
+        version: 8.4.33
+      tailwindcss:
+        specifier: ^3.4.0
+        version: 3.4.0
       typescript:
         specifier: ^5.2.2
         version: 5.3.3
@@ -869,6 +884,10 @@ packages:
     resolution: {integrity: sha512-WXCyOcRtH37HAUkpXhUduaxdm82b4GSlyTqajXviN4EfiuPgNYR109xMCKvpl6zPIpua0DGlMEDCq+g8EdoheQ==}
     dependencies:
       '@babel/types': 7.23.6
+    dev: true
+
+  /@types/culori@2.0.4:
+    resolution: {integrity: sha512-GeLW8+KBRkwqIgeGrU8EnNbBE2D7waYbQHkx2xnI5exlzSGTMpjWtDaHzLWK1PTYmyJN9u6dPvMYumFevDe+VA==}
     dev: true
 
   /@types/estree@1.0.5:

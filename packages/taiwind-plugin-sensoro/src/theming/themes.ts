@@ -1,0 +1,8 @@
+const themes = {
+  dark: {
+
+  },
+  light: {
+
+  }
+}
