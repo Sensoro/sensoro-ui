@@ -1,1 +1,0 @@
-import { interpolate } from 'culori';

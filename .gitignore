@@ -1,23 +1,12 @@
-# Log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Test
-coverage
-
-# Dependency directories
 node_modules
-
-package-lock.json
-
-# build output
-es
-lib
-dist
-
-# IDE
+yarn.lock
+/package-lock.json
+.next
+/dist
+/colors
+/index.js
 .idea
-.vscode
-
 .DS_Store
+*.tgz
+/coverage
+.unlighthouse
