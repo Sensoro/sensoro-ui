@@ -1,7 +1,7 @@
 {
-  "name": "daisyui",
-  "version": "4.5.0",
-  "description": "daisyUI - Tailwind CSS Components",
+  "name": "@sensoro/ui",
+  "version": "1.0.0",
+  "description": "SENSOROUI - Tailwind CSS Components",
   "author": "Pouya Saadeghi",
   "license": "MIT",
   "homepage": "https://daisyui.com",
