@@ -25,7 +25,7 @@ const mainFunction = ({ addBase, addComponents, config }) => {
   }
   if (logs) {
     console.log()
-    console.log(`🌼   ${pc.magenta("daisyUI")} ${pc.dim(daisyuiInfo.version)}`)
+    console.log(`✨ ${pc.magenta("SENSOROUI")} ${pc.dim(daisyuiInfo.version)}`)
   }
 
   // inject @base style
