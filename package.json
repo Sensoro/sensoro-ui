@@ -58,8 +58,7 @@
   "scripts": {
     "init": "npm install && npm run build && cd src/docs && npm install && npm run get-json --silent && cd src/experiments/playground && npm install",
     "prettier": "prettier --write '**/*.{js,svelte,md,json,html,css}' --config src/.prettierrc.yaml --ignore-path src/.prettierignore",
-    "build": "node src/build",
-    "build:test": "tsx scripts/build.ts",
+    "build": "tsx scripts/build.ts",
     "build:skipfullcss": "node src/build --skipfullcss",
     "dev": "cd src/docs && npm run dev",
     "playground": "cd src/experiments/playground && npm run dev",
