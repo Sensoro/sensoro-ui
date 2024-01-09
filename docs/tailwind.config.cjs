@@ -14,7 +14,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: require("../theming"),
+      colors: require("../src/theming"),
       fontFamily: {
         title: ["Figtree", "Noto Sans JP", "Noto Sans", "Vazirmatn", "sans-serif"],
         sans: [
