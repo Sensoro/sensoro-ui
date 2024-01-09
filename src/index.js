@@ -20,7 +20,7 @@ let colorObject = require("./theming/index")
 
 const mainFunction = ({ addBase, addComponents, config }) => {
   let logs = false
-  if (config("daisyui.logs") != false) {
+  if (config("sensoroui.logs") != false) {
     logs = true
   }
   if (logs) {
@@ -29,18 +29,18 @@ const mainFunction = ({ addBase, addComponents, config }) => {
   }
 
   // inject @base style
-  if (config("daisyui.base") != false) {
+  if (config("sensoroui.base") != false) {
     addBase(base)
   }
 
   // inject components
   let file = styled
-  if (config("daisyui.styled") == false) {
+  if (config("sensoroui.styled") == false) {
     file = unstyled
   }
 
   // add prefix to class names if specified
-  const prefix = config("daisyui.prefix")
+  const prefix = config("sensoroui.prefix")
   let postcssJsProcess
   if (prefix) {
     try {
@@ -60,7 +60,7 @@ const mainFunction = ({ addBase, addComponents, config }) => {
   themeInjector
 
   // inject @utilities style needed by components
-  if (config("daisyui.utils") != false) {
+  if (config("sensoroui.utils") != false) {
     addComponents(utilities, { variants: ["responsive"] })
 
     let toAdd = utilitiesUnstyled // shadow clone here to avoid mutate the original
@@ -77,25 +77,25 @@ const mainFunction = ({ addBase, addComponents, config }) => {
   }
 
   if (logs) {
-    if (config("daisyui.styled") == false) {
+    if (config("sensoroui.styled") == false) {
       console.log(
         `├─ ${pc.yellow("ℹ︎")} ${pc.blue("styled")} ${pc.reset("config is")} ${pc.blue(
           "false"
         )} ${pc.dim("\tcomponents won't have design decisions")}`
       )
     }
-    if (config("daisyui.utils") == false) {
+    if (config("sensoroui.utils") == false) {
       console.log(
         `├─ ${pc.yellow("ℹ︎")} ${pc.blue("utils")} ${pc.reset("config is")} ${pc.blue(
           "false"
         )} ${pc.dim("\tdaisyUI utility classes are disabled")}`
       )
     }
-    if (config("daisyui.prefix") && config("daisyui.prefix") !== "") {
+    if (config("sensoroui.prefix") && config("sensoroui.prefix") !== "") {
       console.log(
         `├─ ${pc.green("✔︎")} ${pc.blue("prefix")} is enabled${pc.dim(
           "\t\tdaisyUI classnames must use"
-        )} ${pc.blue(config("daisyui.prefix"))} ${pc.dim("prefix")}`
+        )} ${pc.blue(config("sensoroui.prefix"))} ${pc.dim("prefix")}`
       )
     }
     if (themeInjector.themeOrder.length > 0) {
