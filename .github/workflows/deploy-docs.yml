@@ -43,7 +43,7 @@ jobs:
           clean: false
 
       - name: Setup Node
-        if: env.runtime == 'npm'
+        if: env.runtime == 'pnpm'
         uses: actions/setup-node@v3
         with:
           node-version: "21.1.0"
