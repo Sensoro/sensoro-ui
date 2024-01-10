@@ -1,4 +1,6 @@
 import { mdsvex } from "mdsvex"
+import { dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import adapter from "@sveltejs/adapter-static"
 import preprocess from "svelte-preprocess"
 import headingSlugs from "rehype-slug"
@@ -42,9 +44,9 @@ export default {
       rehypePlugins: rehypePlugins,
       remarkPlugins: remarkPlugins,
       layout: {
-        components: "src/lib/mdsvex-components.svelte",
-        blog: "src/lib/mdsvex-blog.svelte",
-        _: "src/lib/mdsvex.svelte",
+        components: dirname(fileURLToPath(import.meta.url)) + "/src/lib/mdsvex-components.svelte",
+        blog: dirname(fileURLToPath(import.meta.url)) + "/src/lib/mdsvex-blog.svelte",
+        _: dirname(fileURLToPath(import.meta.url)) + "/src/lib/mdsvex.svelte",
       },
     }),
     preprocess({
