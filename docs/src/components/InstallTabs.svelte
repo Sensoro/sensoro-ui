@@ -1,6 +1,7 @@
 <script>
   import { page } from "$app/stores"
   import { t } from "$lib/i18n"
+
   const tabs = [
     {
       name: "Tailwind Plugin",
@@ -10,18 +11,6 @@
       name: "Use CDN",
       href: "/docs/cdn/",
     },
-    // {
-    //   name: "WindiCSS",
-    //   href: "/docs/install/windicss",
-    // },
-    // {
-    //   name: "Tachyons",
-    //   href: "/docs/install/tachyons",
-    // },
-    // {
-    //   name: "BassCSS",
-    //   href: "/docs/install/basscss",
-    // },
   ]
 </script>
 

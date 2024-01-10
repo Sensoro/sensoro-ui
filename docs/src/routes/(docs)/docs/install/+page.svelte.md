@@ -1,6 +1,6 @@
 ---
-title: Install daisyUI as a Tailwind CSS plugin
-desc: How to install daisyUI as a Tailwind CSS plugin?
+title: Install SENSOROUI as a Tailwind CSS plugin
+desc: How to install SENSOROUI as a Tailwind CSS plugin?
 published: true
 ---
 
@@ -14,13 +14,13 @@ published: true
 
 <Translate text="You need <a href='https://nodejs.org/en/download/'>Node.js</a> and <a href='https://tailwindcss.com/docs/installation/'>Tailwind CSS</a> installed." />
 
-1. <Translate text="Install daisyUI" />:
+1. <Translate text="Install SENSOROUI" />:
 
 ```
-npm i -D daisyui@latest
+pnpm i -D @sensoro/ui
 ```
 
-2. <Translate text="Then add daisyUI to your <code>tailwind.config.js</code> files" />:
+2. <Translate text="Then add SENSOROUI to your <code>tailwind.config.js</code> files" />:
 
 ```js
 module.exports = {
