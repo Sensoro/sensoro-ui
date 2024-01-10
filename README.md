@@ -17,25 +17,6 @@
 
 ### 🌼 [How to use →](https://daisyui.com/docs/install/)
 
-## Community
-
-|                                                                                                                             |                                                                   |
-| --------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| **Premium Sponsors** <br/>Sponsor logo + link will be placed on daisyUI website. <br/> [[Become a sponsor][opencollective]] | _3 slots available_ <!-- [![][sponsors]][opencollective] -->      |
-| **Backers** <br/> Thank you for supporting daisyUI! <br/> [[Become a backer][opencollective]]                               | [![][backers_org]][opencollective] [![][backers]][opencollective] |
-| **Contributors** <br/> daisyUI project exists thanks to all the people who contribute. <br/> [[Contribute][contribute]]     | [![][contributors_img]][contributors]                             |
-
----
-
-<div align="center">
-  
-  
-༼ つ ◕_◕ ༽つ  Please share  
-  
-[![][tweet]][tweet-url]
-
-</div>
-
 [build]: https://badgen.net/github/checks/saadeghi/daisyui?label=build
 [npm]: https://badgen.net/github/tag/saadeghi/daisyui?label=version&color=green
 [dl]: https://badgen.net/npm/dt/daisyui?label=installs&icon=npm&color=green
