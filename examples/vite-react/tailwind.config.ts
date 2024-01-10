@@ -6,4 +6,7 @@ export default {
     extend: {},
   },
   plugins: [require('@sensoro/ui')],
+  sensoroui: {
+    themes: ["light", "dark"],
+  },
 } satisfies Config
