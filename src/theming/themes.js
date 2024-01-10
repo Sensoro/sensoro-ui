@@ -11,7 +11,6 @@ module.exports = {
     "base-200": "#F2F2F2",
     "base-300": "#E5E6E6",
     "base-content": "#1f2937",
-    "--rounded-btn": ".125rem",
   },
   dark: {
     "color-scheme": "dark",

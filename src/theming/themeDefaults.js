@@ -35,7 +35,7 @@ module.exports = {
   ],
   variables: {
     "--rounded-box": "1rem",
-    "--rounded-btn": "0.5rem",
+    "--rounded-btn": "0.125rem",
     "--rounded-badge": "1.9rem",
     "--animation-btn": "0.25s",
     "--animation-input": ".2s",
