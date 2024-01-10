@@ -8,7 +8,7 @@ published: true
   import { readEnv } from "$lib/util"
   import InstallTabs from "$components/InstallTabs.svelte"
   import Translate from "$components/Translate.svelte"
-  let version = readEnv("VITE_DAISYUI_VERSION", "latest")
+  let version = readEnv("VITE_SENSOROUI_VERSION", "latest")
 </script>
 
 <InstallTabs />

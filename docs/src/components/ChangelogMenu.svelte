@@ -1,6 +1,6 @@
 <script>
   import { readEnv } from "$lib/util"
-  let version = readEnv("VITE_DAISYUI_VERSION", "latest")
+  let version = readEnv("VITE_SENSOROUI_VERSION", "latest")
 </script>
 
 <div class="dropdown" data-sveltekit-preload-data>
