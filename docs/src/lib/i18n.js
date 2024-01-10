@@ -9,7 +9,7 @@ Object.entries(translations).map(([path]) => {
 })
 
 const path = "../translation"
-export const defaultLang = "en"
+export const defaultLang = "zh_hans"
 export const currentLang = writable(defaultLang)
 export const langs = localesArray
 
