@@ -80,7 +80,7 @@
         <a
           target="_blank"
           rel="noopener, noreferrer"
-          href="https://github.com/saadeghi/daisyui"
+          href="https://github.com/sensoro/sensoro-ui"
           class="link link-hover group">
           Github
           {@html newtabicon}
@@ -97,7 +97,7 @@
         <a
           target="_blank"
           rel="noopener, noreferrer"
-          href="https://www.npmjs.com/package/daisyui"
+          href="https://www.npmjs.com/package/@sensoro/ui"
           class="link link-hover group">
           NPM
           {@html newtabicon}
@@ -179,82 +179,4 @@
       </div>
     </footer>
   </div>
-  <footer
-    class="footer footer-center border-base-200 bg-base-200 text-base-content border-t px-4 py-12">
-    <div class="flex w-full max-w-6xl flex-col items-center justify-between gap-6 sm:flex-row">
-      <a
-        href="https://github.com/saadeghi"
-        rel="noopener, noreferrer"
-        target="_blank"
-        class="inline-flex items-center justify-center hover:opacity-90">
-        <div class="avatar me-3">
-          <div class="mask mask-squircle bg-neutral h-14 w-14 p-px">
-            <img
-              loading="lazy"
-              width="54"
-              height="54"
-              src="/pouya-saadeghi.jpg"
-              alt="Pouya Saadeghi"
-              class="mask mask-squircle" />
-          </div>
-        </div>
-        <div class="text-left">
-          <p class="text-base-content/70 text-xs">{$t("created-by")}</p>
-          <p class="text-base-content text-lg font-bold">Pouya Saadeghi</p>
-        </div>
-      </a>
-      <div class="flex flex-col items-center gap-4 text-left sm:flex-row">
-        <!-- <Sponsors wrapperClasses="flex-col sm:flex-row" classes="bg-base-100" /> -->
-
-        <div id="mc_embed_signup">
-          <form
-            action="https://gmail.us8.list-manage.com/subscribe/post?u=42813cff910e47b1bd132369a&amp;id=9fd7333f07&amp;f_id=003d03e0f0"
-            method="post"
-            id="mc-embedded-subscribe-form"
-            name="mc-embedded-subscribe-form"
-            target="_blank"
-            novalidate="">
-            <!-- store group -->
-            <input type="checkbox" name="group[347002][8]" value="1" class="hidden" checked />
-            <!-- discounts group -->
-            <input type="checkbox" name="group[347002][1]" value="1" class="hidden" checked />
-            <!-- releases group -->
-            <input type="checkbox" name="group[347002][2]" value="1" class="hidden" checked />
-            <!-- blog group -->
-            <input type="checkbox" name="group[347002][4]" value="1" class="hidden" checked />
-            <!-- news group -->
-            <input type="checkbox" name="group[347002][16]" value="1" class="hidden" checked />
-            <div class="form-control w-full max-w-sm">
-              <label class="label" for="mce-EMAIL">
-                <div class="label-text">
-                  Enter your email address
-                  <div class="label-text text-base-content/70 text-xs">
-                    to get updates, news and discounts
-                  </div>
-                </div>
-              </label>
-              <div class="join">
-                <input
-                  type="email"
-                  autocomplete="email"
-                  name="EMAIL"
-                  class="join-item input input-bordered w-full max-w-sm"
-                  id="mce-EMAIL"
-                  placeholder="mail@site.com"
-                  required />
-                <button name="subscribe" class="join-item btn btn-neutral">Subscribe</button>
-              </div>
-            </div>
-            <div aria-hidden="true" class="hidden">
-              <input
-                type="text"
-                name="b_42813cff910e47b1bd132369a_9fd7333f07"
-                tabindex="-1"
-                value="" />
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </footer>
 </div>
