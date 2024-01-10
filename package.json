@@ -57,6 +57,7 @@
     "build": "sensoro-scripts build",
     "build:skipfullcss": "sensoro-scripts build --skipfullcss",
     "start": "pnpm --filter docs dev",
+    "start:example-react": "pnpm --filter @example/vite-react start",
     "playground": "cd src/experiments/playground && npm run dev",
     "release": "node src/release",
     "publish:alpha": "npm publish --tag=alpha",
