@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: 📗 FAQ
-    url: https://github.com/sensoro/sensoro-ui/discussions/1949
+    url: https://github.com/sensoro/sensoro-ui/discussions/2
     about: Read about common problems and how to fix
   - name: 🔎 Search in Discussions
     url: https://github.com/sensoro/sensoro-ui/discussions?discussions_q=
