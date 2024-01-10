@@ -4,15 +4,15 @@
     font-size: 0.75rem;
   }
   &-sm {
-    @apply h-8 min-h-[2rem] px-3;
+    @apply h-7 min-h-[1.75rem] px-3;
     font-size: 0.875rem;
   }
   &-md {
-    @apply h-12 min-h-[3rem] px-4;
+    @apply h-8 min-h-[2rem] px-4;
     font-size: 0.875rem;
   }
   &-lg {
-    @apply h-16 min-h-[4rem] px-6;
+    @apply h-10 min-h-[2.5rem] px-6;
     font-size: 1.125rem;
   }
   &-wide {
