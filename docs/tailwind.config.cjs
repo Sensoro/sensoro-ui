@@ -48,16 +48,16 @@ module.exports = {
       },
     },
   },
-  daisyui: {
+  sensoroui: {
     logs: false,
     themes: true,
   },
   plugins: [
     require("@tailwindcss/typography"),
-    process.env.NODE_ENV === "production" ? require("daisyui") : [],
+    process.env.NODE_ENV === "production" ? require("@sensoro/ui") : [],
   ],
   presets: [
-    process.env.NODE_ENV === "production" ? [] : require("../components/tailwind.config.js"),
+    process.env.NODE_ENV === "production" ? [] : require("../src/components/tailwind.config.js"),
     "node_modules/tailwindcss/stubs/defaultConfig.stub.js",
   ],
 }

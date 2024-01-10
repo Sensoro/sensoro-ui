@@ -5,7 +5,7 @@
   },
   "scripts": {
     "get-json": "node src/lib/scripts/get-json",
-    "dev": "npm run createStyleHandlerComponent:dev --silent && vite dev --port 3000 --open",
+    "dev": "npm run createStyleHandlerComponent:dev --silent && vite dev --port 8888 --open",
     "build": "npm run get-json --silent && npm run createStyleHandlerComponent:prod --silent && NODE_ENV=production vite build --logLevel error",
     "preview": "npm run build && vite preview --port 3000 --open",
     "createStyleHandlerComponent:dev": "echo $'<script>import \"$components/StyleDevelopment.svelte\"</script>' > src/components/StyleHandler.svelte",
@@ -37,11 +37,11 @@
     "svelte-typeahead": "4.4.1",
     "tailwindcss": "3.3.6",
     "theme-change": "2.5.0",
-    "vite": "^5.0.9"
+    "vite": "^5.0.11"
   },
   "dependencies": {
     "culori": "3.3.0",
-    "daisyui": "4.4.20",
+    "@sensoro/ui": "workspace:*",
     "lodash.debounce": "4.0.8",
     "nanoid": "5.0.4",
     "svelte-countdown": "1.1.2",
