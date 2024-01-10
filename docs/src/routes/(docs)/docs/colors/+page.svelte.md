@@ -1,6 +1,6 @@
 ---
 title: Colors
-desc: How to use daisyUI colors?
+desc: How to use SENSOROUI colors?
 published: true
 ---
 
@@ -12,7 +12,7 @@ published: true
 
 <div class="max-w-3xl">
 
-<Translate text="daisyUI is fully themeable and colorable," />  
+<Translate text="SENSOROUI is fully themeable and colorable," />  
 <Translate text="So instead of using constant color utility classes like:" />
 
 - <span class="badge badge-xs bg-green-500"></span> bg-green-500
