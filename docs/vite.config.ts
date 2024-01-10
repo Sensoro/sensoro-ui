@@ -3,9 +3,8 @@ import { defineConfig } from 'vite'
 import { sveltekit } from '@sveltejs/kit/vite'
 import { visualizer } from 'rollup-plugin-visualizer'
 
-export default defineConfig(({ command }) => {
+export default defineConfig(() => {
   return {
-    base: command === 'build' ? 'sensoro-ui' : '',
     plugins: [
       sveltekit(),
       visualizer({
