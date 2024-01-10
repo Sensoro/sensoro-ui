@@ -9,10 +9,6 @@
     "type": "git",
     "url": "git+https://github.com/sensoro/sensoro-ui.git"
   },
-  "funding": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/daisyui"
-  },
   "bugs": {
     "url": "https://github.com/sensoro/sensoro-ui/issues"
   },

@@ -6,7 +6,7 @@ const postcssJs = require("postcss-js")
 const pc = require("picocolors")
 const postcssPrefix = require("./lib/addPrefix")
 
-const daisyuiInfo = require("../package.json")
+const sensorouiInfo = require("../package.json")
 const utilities = require("../dist/utilities")
 const base = require("../dist/base")
 const unstyled = require("../dist/unstyled")
@@ -25,7 +25,7 @@ const mainFunction = ({ addBase, addComponents, config }) => {
   }
   if (logs) {
     console.log()
-    console.log(`✨ ${pc.magenta("SENSOROUI")} ${pc.dim(daisyuiInfo.version)}`)
+    console.log(`✨ ${pc.magenta("SENSOROUI")} ${pc.dim(sensorouiInfo.version)}`)
   }
 
   // inject @base style
@@ -88,7 +88,7 @@ const mainFunction = ({ addBase, addComponents, config }) => {
       console.log(
         `├─ ${pc.yellow("ℹ︎")} ${pc.blue("utils")} ${pc.reset("config is")} ${pc.blue(
           "false"
-        )} ${pc.dim("\tdaisyUI utility classes are disabled")}`
+        )} ${pc.dim("\tSENSOROUI utility classes are disabled")}`
       )
     }
     if (config("sensoroui.prefix") && config("sensoroui.prefix") !== "") {
@@ -102,22 +102,19 @@ const mainFunction = ({ addBase, addComponents, config }) => {
       console.log(
         `├─ ${pc.green("✔︎")} ${themeInjector.themeOrder.length} ${
           themeInjector.themeOrder.length > 1 ? "themes" : "theme"
-        } added${pc.dim("\t\thttps://daisyui.com/docs/themes")}`
+        } added${pc.dim("\t\thttps://sensoroui.xingkang.wang/docs/themes")}`
       )
     }
     if (themeInjector.themeOrder.length === 0) {
       console.log(
         `├─ ${pc.yellow("ℹ︎")} All themes are disabled in config${pc.dim(
-          "\t\thttps://daisyui.com/docs/themes"
+          "\t\thttps://sensoroui.xingkang.wang/docs/themes"
         )}`
       )
     }
     let messages = [
-      `${pc.green("❤︎")} ${pc.reset("Support daisyUI project:")}\t${pc.dim(
-        daisyuiInfo.funding.url
-      )}`,
-      `${pc.green("★")} ${pc.reset("Star daisyUI on GitHub")}\t${pc.dim(
-        "https://github.com/saadeghi/daisyui"
+      `${pc.green("★")} ${pc.reset("Star SENSOROUI on GitHub")}\t${pc.dim(
+        "https://github.com/sensoro/sensoro-ui"
       )}`,
     ]
     console.log(`╰─ ${messages[Math.floor(Math.random() * messages.length)]}`)
@@ -130,7 +127,7 @@ module.exports = tailwindPlugin(mainFunction, {
     extend: {
       colors: {
         ...colorObject,
-        // adding all Tailwind `neutral` shades here so they don't get overridden by daisyUI `neutral` color
+        // adding all Tailwind `neutral` shades here so they don't get overridden by SENSOROUI `neutral` color
         "neutral-50": "#fafafa",
         "neutral-100": "#f5f5f5",
         "neutral-200": "#e5e5e5",
