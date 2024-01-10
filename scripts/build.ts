@@ -1,10 +1,11 @@
 import util from 'util';
 import { exec } from 'child_process';
+import commandLineArgs from 'command-line-args';
 import { nextTask } from './utils';
 
 const execPromise = util.promisify(exec);
 
-const outdir = 'dist';
+const { skipfullcss } = commandLineArgs([{ name: 'skipfullcss', type: Boolean }]);
 
 (async () => {
   await nextTask('Generating base', () => {
@@ -75,7 +76,9 @@ const outdir = 'dist';
     return execPromise(`postcss src/themes/index.css -o dist/themes.css --config src/themes`);
   });
 
-  await nextTask('Prejss full', () => {
-    return execPromise(`postcss src/full/index.css -o dist/full.css --config src/full`);
-  });
+  if (!skipfullcss) {
+    await nextTask('Prejss full', () => {
+      return execPromise(`postcss src/full/index.css -o dist/full.css --config src/full`);
+    });
+  }
 })()
